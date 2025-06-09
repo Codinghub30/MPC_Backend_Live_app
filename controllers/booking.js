@@ -16,7 +16,7 @@ module.exports.createBooking = async (req, res) => {
       fatherName,
       motherName,
       workEmail,
-      serviceType,
+      workType,
     } = req.body;
 
     const newBooking = new Booking({
@@ -32,7 +32,7 @@ module.exports.createBooking = async (req, res) => {
       fatherName,
       motherName,
       workEmail,
-      serviceType,
+      workType,
     });
 
     await newBooking.save();

@@ -11,9 +11,7 @@ const bookingSchema = new mongoose.Schema({
   state: { type: String },
   zip: { type: String },
   country: { type: String },
-  fatherName: { type: String },
-  motherName: { type: String },
-  workEmail: { type: String },
+  workType: { type: String },
 });
 
 module.exports = mongoose.model("Booking", bookingSchema);
